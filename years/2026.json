@@ -2,7 +2,7 @@
   "year": 2026,
   "source": "millionday.cloud",
   "source_url": "https://www.millionday.cloud/archivio-estrazioni.php",
-  "draw_count": 218,
+  "draw_count": 219,
   "draws": [
     {
       "draw_id": "2026-01-01-midday",
@@ -7848,6 +7848,42 @@
         20,
         41,
         55
+      ],
+      "source": "millionday.cloud",
+      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+    },
+    {
+      "draw_id": "2026-04-20-evening",
+      "date": "2026-04-20",
+      "slot": "evening",
+      "time": "20:30",
+      "numbers": [
+        2,
+        15,
+        18,
+        33,
+        39
+      ],
+      "numbers_sorted": [
+        2,
+        15,
+        18,
+        33,
+        39
+      ],
+      "extra_numbers": [
+        16,
+        21,
+        23,
+        28,
+        34
+      ],
+      "extra_numbers_sorted": [
+        16,
+        21,
+        23,
+        28,
+        34
       ],
       "source": "millionday.cloud",
       "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
