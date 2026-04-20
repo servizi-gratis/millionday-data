@@ -10,7 +10,7 @@ Questa versione usa come fonte primaria la pagina archivio di `millionday.cloud`
 - `latest.json`: ultima estrazione disponibile
 - `years/YYYY.json`: estrazioni per anno
 - `stats/curiosities.json`: statistiche precomputate per il frontend
-- `winners.json`: placeholder per pipeline future sulle vincite
+- `winners.json`: vincite 2018-2021 backfillate dai PDF ufficiali e arricchite con `draw_id`, `slot` e `extra_numbers`
 
 ## Avvio rapido
 
@@ -18,34 +18,43 @@ Questa versione usa come fonte primaria la pagina archivio di `millionday.cloud`
 
 ```powershell
 py -m venv .venv
-.venv\Scripts\activate
+.venv\Scriptsctivate
 pip install -r requirements.txt
-python scripts\bootstrap_archive.py --data-dir .
-python scripts\build_stats.py --data-dir .
-python scripts\validate_data.py --data-dir .
+python scriptsootstrap_archive.py --data-dir .
+python scriptsuild_stats.py --data-dir .
+python scripts\enrich_winners.py --data-dir .
+python scriptsalidate_data.py --data-dir .
 ```
 
 ### Aggiornamento ordinario
 
 ```powershell
 python scripts\sync_latest.py --data-dir .
-python scripts\build_stats.py --data-dir .
-python scripts\validate_data.py --data-dir .
+python scriptsuild_stats.py --data-dir .
+python scriptsalidate_data.py --data-dir .
 ```
 
 Oppure:
 
 ```powershell
-python scripts\refresh_all.py --data-dir .
+python scriptsefresh_all.py --data-dir .
+```
+
+Se vuoi rigenerare anche l'arricchimento dei vincitori:
+
+```powershell
+python scriptsefresh_all.py --data-dir . --with-winners
 ```
 
 ## Note importanti
 
-- La fonte primaria è **terza** e non ufficiale. È pratica e stabile per l'estrazione server-side, ma non sostituisce una fonte ufficiale.
+- La fonte primaria delle estrazioni è **terza** e non ufficiale. È pratica e stabile per l'estrazione server-side, ma non sostituisce una fonte ufficiale.
+- `winners.json` copre **2018-2021** con backfill una tantum dai PDF ufficiali. Non fa parte del sync giornaliero.
 - I numeri principali e gli EXTRA vengono salvati sia in ordine originale (`numbers`, `extra_numbers`) sia ordinati (`numbers_sorted`, `extra_numbers_sorted`) per facilitare verifiche e statistiche.
 - Le estrazioni più vecchie non includono `extra_numbers` e, in alcuni periodi iniziali, è presente una sola estrazione giornaliera alle 20:30.
+- L'arricchimento dei vincitori fa prima un match esatto su `date + numbers`; se il PDF estratto contiene refusi OCR e in quella data esiste una sola estrazione, usa un fallback `unique_draw_same_date` marcato con confidenza `medium`.
 
-## Formato di un record
+## Formato di un record estrazione
 
 ```json
 {
@@ -59,6 +68,32 @@ python scripts\refresh_all.py --data-dir .
   "extra_numbers_sorted": [19, 21, 28, 30, 35],
   "source": "millionday.cloud",
   "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+}
+```
+
+## Formato di un record vincita
+
+```json
+{
+  "win_id": "2021-09-01-arezzo-ar-fi2635",
+  "date": "2021-09-01",
+  "amount": 1000000,
+  "retailer_code": "FI2635",
+  "address": "localita' indicatore zona a",
+  "city": "AREZZO",
+  "province": "AR",
+  "region": "TOSCANA",
+  "channel": "retail",
+  "pdf_numbers": [2, 8, 13, 14, 19],
+  "numbers": [19, 14, 2, 13, 8],
+  "numbers_sorted": [2, 8, 13, 14, 19],
+  "draw_id": "2021-09-01-evening",
+  "slot": "evening",
+  "time": "20:30",
+  "extra_numbers": [],
+  "match_status": "matched",
+  "match_method": "exact_date_numbers",
+  "match_confidence": "high"
 }
 ```
 

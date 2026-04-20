@@ -15,10 +15,17 @@ def run(script_name: str, data_dir: str) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser(description="Esegue sync, stats e validazione")
     parser.add_argument("--data-dir", default=".", help="Root della repo dati")
+    parser.add_argument(
+        "--with-winners",
+        action="store_true",
+        help="Esegue anche l'arricchimento di winners.json prima della validazione",
+    )
     args = parser.parse_args()
 
     run("sync_latest.py", args.data_dir)
     run("build_stats.py", args.data_dir)
+    if args.with_winners:
+        run("enrich_winners.py", args.data_dir)
     run("validate_data.py", args.data_dir)
 
 

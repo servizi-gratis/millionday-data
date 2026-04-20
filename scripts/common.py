@@ -47,6 +47,10 @@ def year_file(root: Path, year: int) -> Path:
     return root / "years" / f"{year}.json"
 
 
+def winners_file(root: Path) -> Path:
+    return root / "winners.json"
+
+
 def load_all_draws(root: Path) -> list[dict[str, Any]]:
     index = load_json(root / "index.json", {})
     years = index.get("years", [])
@@ -78,13 +82,16 @@ def write_grouped_draws(root: Path, grouped: dict[int, list[dict[str, Any]]]) ->
         year_file(root, obsolete).unlink(missing_ok=True)
 
     for year, draws in grouped.items():
-        dump_json(year_file(root, year), {
-            "year": year,
-            "source": ROOT_SOURCE_NAME,
-            "source_url": ROOT_SOURCE_URL,
-            "draw_count": len(draws),
-            "draws": draws,
-        })
+        dump_json(
+            year_file(root, year),
+            {
+                "year": year,
+                "source": ROOT_SOURCE_NAME,
+                "source_url": ROOT_SOURCE_URL,
+                "draw_count": len(draws),
+                "draws": draws,
+            },
+        )
 
 
 def refresh_index_and_latest(root: Path, draws: list[dict[str, Any]]) -> None:
@@ -95,25 +102,31 @@ def refresh_index_and_latest(root: Path, draws: list[dict[str, Any]]) -> None:
     years = sorted(grouped.keys())
     latest = max(draws, key=draw_sort_key) if draws else None
 
-    dump_json(root / "index.json", {
-        "updated_at": updated_at,
-        "years": years,
-        "latest_year": years[-1] if years else None,
-        "archive_start_date": "2018-02-07",
-        "total_draws": len(draws),
-        "latest_draw_id": latest["draw_id"] if latest else None,
-        "source": ROOT_SOURCE_NAME,
-        "source_url": ROOT_SOURCE_URL,
-        "is_demo": False,
-    })
+    dump_json(
+        root / "index.json",
+        {
+            "updated_at": updated_at,
+            "years": years,
+            "latest_year": years[-1] if years else None,
+            "archive_start_date": "2018-02-07",
+            "total_draws": len(draws),
+            "latest_draw_id": latest["draw_id"] if latest else None,
+            "source": ROOT_SOURCE_NAME,
+            "source_url": ROOT_SOURCE_URL,
+            "is_demo": False,
+        },
+    )
 
-    dump_json(root / "latest.json", {
-        "updated_at": updated_at,
-        "source_name": ROOT_SOURCE_NAME,
-        "source_url": ROOT_SOURCE_URL,
-        "is_demo": False,
-        "draw": latest,
-    })
+    dump_json(
+        root / "latest.json",
+        {
+            "updated_at": updated_at,
+            "source_name": ROOT_SOURCE_NAME,
+            "source_url": ROOT_SOURCE_URL,
+            "is_demo": False,
+            "draw": latest,
+        },
+    )
 
 
 def upsert_draws(existing: Iterable[dict[str, Any]], incoming: Iterable[dict[str, Any]]) -> tuple[list[dict[str, Any]], int]:
