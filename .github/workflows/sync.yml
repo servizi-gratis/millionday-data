@@ -1,0 +1,43 @@
+name: Sync MillionDAY data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '10 11 * * *'
+    - cron: '40 18 * * *'
+    - cron: '10 12 * * *'
+    - cron: '40 19 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Refresh dataset
+        run: |
+          python scripts/sync_latest.py --data-dir .
+          python scripts/build_stats.py --data-dir .
+          python scripts/validate_data.py --data-dir .
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git diff --cached --quiet || git commit -m "sync data"
+          git push
