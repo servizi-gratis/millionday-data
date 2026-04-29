@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-28T20:49:07Z",
+  "updated_at": "2026-04-29T12:52:46Z",
   "years": [
     2018,
     2019,
@@ -13,8 +13,8 @@
   ],
   "latest_year": 2026,
   "archive_start_date": "2018-02-07",
-  "total_draws": 4128,
-  "latest_draw_id": "2026-04-28-evening",
+  "total_draws": 4129,
+  "latest_draw_id": "2026-04-29-midday",
   "source": "millionday.cloud",
   "source_url": "https://www.millionday.cloud/archivio-estrazioni.php",
   "is_demo": false

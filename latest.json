@@ -1,40 +1,40 @@
 {
-  "updated_at": "2026-04-28T20:49:07Z",
+  "updated_at": "2026-04-29T12:52:46Z",
   "source_name": "millionday.cloud",
   "source_url": "https://www.millionday.cloud/archivio-estrazioni.php",
   "is_demo": false,
   "draw": {
-    "draw_id": "2026-04-28-evening",
-    "date": "2026-04-28",
-    "slot": "evening",
-    "time": "20:30",
+    "draw_id": "2026-04-29-midday",
+    "date": "2026-04-29",
+    "slot": "midday",
+    "time": "13:00",
     "numbers": [
-      16,
-      23,
-      28,
-      29,
-      42
+      8,
+      20,
+      24,
+      30,
+      31
     ],
     "numbers_sorted": [
-      16,
-      23,
-      28,
-      29,
-      42
+      8,
+      20,
+      24,
+      30,
+      31
     ],
     "extra_numbers": [
-      8,
-      11,
-      12,
-      14,
-      27
+      4,
+      5,
+      13,
+      36,
+      38
     ],
     "extra_numbers_sorted": [
-      8,
-      11,
-      12,
-      14,
-      27
+      4,
+      5,
+      13,
+      36,
+      38
     ],
     "source": "millionday.cloud",
     "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
