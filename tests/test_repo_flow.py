@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from common import ensure_layout, load_all_draws, refresh_index_and_latest, upsert_draws
+from common import ROOT_SOURCE_NAME, ROOT_SOURCE_URL, ensure_layout, load_all_draws, refresh_index_and_latest, upsert_draws
 
 
 def test_upsert_and_refresh(tmp_path: Path) -> None:
@@ -16,8 +16,8 @@ def test_upsert_and_refresh(tmp_path: Path) -> None:
             "numbers_sorted": [4, 26, 32, 40, 43],
             "extra_numbers": [3, 29, 37, 42, 50],
             "extra_numbers_sorted": [3, 29, 37, 42, 50],
-            "source": "millionday.cloud",
-            "source_url": "https://www.millionday.cloud/archivio-estrazioni.php",
+            "source": ROOT_SOURCE_NAME,
+            "source_url": ROOT_SOURCE_URL,
         },
         {
             "draw_id": "2026-04-19-evening",
@@ -28,8 +28,8 @@ def test_upsert_and_refresh(tmp_path: Path) -> None:
             "numbers_sorted": [6, 36, 41, 47, 54],
             "extra_numbers": [19, 21, 28, 30, 35],
             "extra_numbers_sorted": [19, 21, 28, 30, 35],
-            "source": "millionday.cloud",
-            "source_url": "https://www.millionday.cloud/archivio-estrazioni.php",
+            "source": ROOT_SOURCE_NAME,
+            "source_url": ROOT_SOURCE_URL,
         },
     ]
     merged, changes = upsert_draws(initial, incoming)

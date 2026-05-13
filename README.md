@@ -2,7 +2,7 @@
 
 Repository dati per una web app MillionDAY.
 
-Questa versione usa come fonte primaria la pagina archivio di `millionday.cloud`, che espone in HTML l'archivio storico delle estrazioni dal 7 febbraio 2018. Il sito ufficiale Lotto Italia conferma che l'archivio MillionDAY parte dal 7 febbraio 2018 e che oggi esistono due estrazioni giornaliere alle 13:00 e alle 20:30.
+Questa versione usa come fonte primaria il sito ufficiale Lotto Italia. Gli script leggono l'endpoint JSON usato dal frontend della pagina estrazioni MillionDAY e mantengono lo schema storico della repository.
 
 ## Struttura
 
@@ -18,56 +18,65 @@ Questa versione usa come fonte primaria la pagina archivio di `millionday.cloud`
 
 ```powershell
 py -m venv .venv
-.venv\Scriptsctivate
+.venv\Scripts\activate
 pip install -r requirements.txt
-python scriptsootstrap_archive.py --data-dir .
-python scriptsuild_stats.py --data-dir .
+python scripts\bootstrap_archive.py --data-dir .
+python scripts\build_stats.py --data-dir .
 python scripts\enrich_winners.py --data-dir .
-python scriptsalidate_data.py --data-dir .
+python scripts\validate_data.py --data-dir .
 ```
 
 ### Aggiornamento ordinario
 
 ```powershell
 python scripts\sync_latest.py --data-dir .
-python scriptsuild_stats.py --data-dir .
-python scriptsalidate_data.py --data-dir .
+python scripts\build_stats.py --data-dir .
+python scripts\validate_data.py --data-dir .
 ```
 
 Oppure:
 
 ```powershell
-python scriptsefresh_all.py --data-dir .
+python scripts\refresh_all.py --data-dir .
 ```
 
 Se vuoi rigenerare anche l'arricchimento dei vincitori:
 
 ```powershell
-python scriptsefresh_all.py --data-dir . --with-winners
+python scripts\refresh_all.py --data-dir . --with-winners
 ```
+
+## Fonte dati
+
+- Pagina ufficiale: `https://www.lotto-italia.it/millionday/estratti`
+- Endpoint usato dal frontend: `https://www.lotto-italia.it/md/estrazioni-e-vincite/ultime-estrazioni-millionDay.json`
+- L'archivio MillionDAY parte dal 7 febbraio 2018.
+- L'EXTRA MillionDAY parte dal 16 marzo 2022.
+- Oggi esistono due estrazioni giornaliere: 13:00 e 20:30.
+
+`sync_latest.py` scarta le estrazioni non ancora pubblicate dall'API, per esempio la riga serale vuota quando il job gira prima delle 20:30. Se il dataset è rimasto fermo per qualche giorno, lo script aumenta automaticamente la finestra di recupero per colmare il buco.
 
 ## Note importanti
 
-- La fonte primaria delle estrazioni è **terza** e non ufficiale. È pratica e stabile per l'estrazione server-side, ma non sostituisce una fonte ufficiale.
+- I numeri principali e gli EXTRA vengono salvati sia in ordine sorgente (`numbers`, `extra_numbers`) sia ordinati (`numbers_sorted`, `extra_numbers_sorted`) per facilitare verifiche e statistiche.
+- Le estrazioni più vecchie non includono `extra_numbers` e, nei periodi iniziali, è presente una sola estrazione giornaliera alle 20:30.
 - `winners.json` copre **2018-2021** con backfill una tantum dai PDF ufficiali. Non fa parte del sync giornaliero.
-- I numeri principali e gli EXTRA vengono salvati sia in ordine originale (`numbers`, `extra_numbers`) sia ordinati (`numbers_sorted`, `extra_numbers_sorted`) per facilitare verifiche e statistiche.
-- Le estrazioni più vecchie non includono `extra_numbers` e, in alcuni periodi iniziali, è presente una sola estrazione giornaliera alle 20:30.
 - L'arricchimento dei vincitori fa prima un match esatto su `date + numbers`; se il PDF estratto contiene refusi OCR e in quella data esiste una sola estrazione, usa un fallback `unique_draw_same_date` marcato con confidenza `medium`.
 
 ## Formato di un record estrazione
 
 ```json
 {
-  "draw_id": "2026-04-19-evening",
-  "date": "2026-04-19",
-  "slot": "evening",
-  "time": "20:30",
-  "numbers": [6, 36, 41, 47, 54],
-  "numbers_sorted": [6, 36, 41, 47, 54],
-  "extra_numbers": [19, 21, 28, 30, 35],
-  "extra_numbers_sorted": [19, 21, 28, 30, 35],
-  "source": "millionday.cloud",
-  "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+  "draw_id": "2026-05-12-midday",
+  "date": "2026-05-12",
+  "slot": "midday",
+  "time": "13:00",
+  "numbers": [9, 14, 22, 35, 41],
+  "numbers_sorted": [9, 14, 22, 35, 41],
+  "extra_numbers": [16, 18, 38, 39, 42],
+  "extra_numbers_sorted": [16, 18, 38, 39, 42],
+  "source": "lotto-italia.it",
+  "source_url": "https://www.lotto-italia.it/millionday/estratti"
 }
 ```
 

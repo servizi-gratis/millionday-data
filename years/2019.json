@@ -1,8 +1,8 @@
 {
   "year": 2019,
-  "source": "millionday.cloud",
-  "source_url": "https://www.millionday.cloud/archivio-estrazioni.php",
-  "draw_count": 364,
+  "source": "lotto-italia.it",
+  "source_url": "https://www.lotto-italia.it/millionday/estratti",
+  "draw_count": 365,
   "draws": [
     {
       "draw_id": "2019-01-01-evening",
@@ -3819,6 +3819,30 @@
       "extra_numbers_sorted": [],
       "source": "millionday.cloud",
       "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+    },
+    {
+      "draw_id": "2019-06-09-evening",
+      "date": "2019-06-09",
+      "slot": "evening",
+      "time": "20:30",
+      "numbers": [
+        3,
+        6,
+        37,
+        48,
+        54
+      ],
+      "numbers_sorted": [
+        3,
+        6,
+        37,
+        48,
+        54
+      ],
+      "extra_numbers": [],
+      "extra_numbers_sorted": [],
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2019-06-10-evening",

@@ -2,22 +2,26 @@ from __future__ import annotations
 
 import argparse
 import sys
-from pathlib import Path
 
-from cloud_source import fetch_archive_html, parse_archive_html
+from official_source import DEFAULT_BATCH_SIZE, fetch_all_draws
 from common import ensure_layout, load_all_draws, refresh_index_and_latest, upsert_draws
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Costruisce l'archivio completo da millionday.cloud")
+    parser = argparse.ArgumentParser(description="Costruisce l'archivio completo dall'API ufficiale Lotto Italia")
     parser.add_argument("--data-dir", default=".", help="Root della repo dati")
     parser.add_argument("--timeout", type=float, default=30.0, help="Timeout HTTP in secondi")
+    parser.add_argument(
+        "--batch-size",
+        type=int,
+        default=DEFAULT_BATCH_SIZE,
+        help="Numero di estrazioni richieste per ogni finestra API",
+    )
     args = parser.parse_args()
 
     root = ensure_layout(args.data_dir)
     existing = load_all_draws(root)
-    html = fetch_archive_html(timeout_seconds=args.timeout)
-    incoming = parse_archive_html(html)
+    incoming = fetch_all_draws(batch_size=args.batch_size, timeout_seconds=args.timeout)
 
     merged, changes = upsert_draws(existing, incoming)
     refresh_index_and_latest(root, merged)

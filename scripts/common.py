@@ -6,8 +6,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Iterable
 
-ROOT_SOURCE_NAME = "millionday.cloud"
-ROOT_SOURCE_URL = "https://www.millionday.cloud/archivio-estrazioni.php"
+ROOT_SOURCE_NAME = "lotto-italia.it"
+ROOT_SOURCE_URL = "https://www.lotto-italia.it/millionday/estratti"
 
 
 def utc_now_iso() -> str:

@@ -1,8 +1,8 @@
 {
   "year": 2026,
-  "source": "millionday.cloud",
-  "source_url": "https://www.millionday.cloud/archivio-estrazioni.php",
-  "draw_count": 252,
+  "source": "lotto-italia.it",
+  "source_url": "https://www.lotto-italia.it/millionday/estratti",
+  "draw_count": 264,
   "draws": [
     {
       "draw_id": "2026-01-01-midday",
@@ -1443,6 +1443,42 @@
       ],
       "source": "millionday.cloud",
       "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+    },
+    {
+      "draw_id": "2026-01-21-midday",
+      "date": "2026-01-21",
+      "slot": "midday",
+      "time": "13:00",
+      "numbers": [
+        8,
+        25,
+        26,
+        42,
+        50
+      ],
+      "numbers_sorted": [
+        8,
+        25,
+        26,
+        42,
+        50
+      ],
+      "extra_numbers": [
+        10,
+        13,
+        24,
+        41,
+        43
+      ],
+      "extra_numbers_sorted": [
+        10,
+        13,
+        24,
+        41,
+        43
+      ],
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-01-21-evening",
@@ -7489,8 +7525,8 @@
         34,
         43
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-15-evening",
@@ -7525,8 +7561,8 @@
         9,
         22
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-16-midday",
@@ -7561,8 +7597,8 @@
         31,
         34
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-16-evening",
@@ -7597,8 +7633,8 @@
         50,
         51
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-17-midday",
@@ -7633,8 +7669,8 @@
         25,
         50
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-17-evening",
@@ -7669,8 +7705,8 @@
         16,
         33
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-18-midday",
@@ -7705,8 +7741,8 @@
         54,
         55
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-18-evening",
@@ -7741,8 +7777,8 @@
         53,
         55
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-19-midday",
@@ -7777,8 +7813,8 @@
         42,
         50
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-19-evening",
@@ -7813,8 +7849,8 @@
         30,
         35
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-20-midday",
@@ -7849,8 +7885,8 @@
         41,
         55
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-20-evening",
@@ -7885,8 +7921,8 @@
         28,
         34
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-21-midday",
@@ -7921,8 +7957,8 @@
         37,
         46
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-21-evening",
@@ -7957,8 +7993,8 @@
         38,
         52
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-22-midday",
@@ -7993,8 +8029,8 @@
         41,
         48
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-22-evening",
@@ -8029,8 +8065,8 @@
         43,
         51
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-23-midday",
@@ -8065,8 +8101,8 @@
         35,
         36
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-23-evening",
@@ -8101,8 +8137,8 @@
         35,
         50
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-24-midday",
@@ -8137,8 +8173,8 @@
         40,
         47
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-24-evening",
@@ -8173,8 +8209,8 @@
         35,
         51
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-25-midday",
@@ -8209,8 +8245,8 @@
         47,
         49
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-25-evening",
@@ -8245,8 +8281,8 @@
         48,
         50
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-26-midday",
@@ -8281,8 +8317,8 @@
         45,
         55
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-26-evening",
@@ -8317,8 +8353,8 @@
         53,
         54
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-27-midday",
@@ -8353,8 +8389,8 @@
         29,
         40
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-27-evening",
@@ -8389,8 +8425,8 @@
         16,
         47
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-28-midday",
@@ -8425,8 +8461,8 @@
         37,
         45
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-28-evening",
@@ -8461,8 +8497,8 @@
         14,
         27
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-29-midday",
@@ -8497,8 +8533,8 @@
         36,
         38
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-29-evening",
@@ -8533,8 +8569,8 @@
         38,
         53
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-30-midday",
@@ -8569,8 +8605,8 @@
         50,
         54
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-04-30-evening",
@@ -8605,8 +8641,8 @@
         38,
         47
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-05-01-midday",
@@ -8641,8 +8677,8 @@
         28,
         35
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-05-01-evening",
@@ -8677,8 +8713,8 @@
         35,
         48
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-05-02-midday",
@@ -8713,8 +8749,8 @@
         39,
         41
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-05-02-evening",
@@ -8749,8 +8785,8 @@
         32,
         47
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-05-03-midday",
@@ -8785,8 +8821,8 @@
         49,
         51
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-05-03-evening",
@@ -8821,8 +8857,8 @@
         45,
         50
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-05-04-midday",
@@ -8857,8 +8893,8 @@
         40,
         52
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-05-04-evening",
@@ -8893,8 +8929,8 @@
         39,
         44
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-05-05-midday",
@@ -8929,8 +8965,8 @@
         42,
         50
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-05-05-evening",
@@ -8965,8 +9001,8 @@
         33,
         39
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-05-06-midday",
@@ -9001,8 +9037,8 @@
         42,
         55
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-05-06-evening",
@@ -9037,8 +9073,8 @@
         32,
         50
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     },
     {
       "draw_id": "2026-05-07-midday",
@@ -9073,8 +9109,404 @@
         48,
         52
       ],
-      "source": "millionday.cloud",
-      "source_url": "https://www.millionday.cloud/archivio-estrazioni.php"
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
+    },
+    {
+      "draw_id": "2026-05-07-evening",
+      "date": "2026-05-07",
+      "slot": "evening",
+      "time": "20:30",
+      "numbers": [
+        2,
+        6,
+        11,
+        14,
+        30
+      ],
+      "numbers_sorted": [
+        2,
+        6,
+        11,
+        14,
+        30
+      ],
+      "extra_numbers": [
+        1,
+        25,
+        27,
+        51,
+        55
+      ],
+      "extra_numbers_sorted": [
+        1,
+        25,
+        27,
+        51,
+        55
+      ],
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
+    },
+    {
+      "draw_id": "2026-05-08-midday",
+      "date": "2026-05-08",
+      "slot": "midday",
+      "time": "13:00",
+      "numbers": [
+        5,
+        15,
+        30,
+        34,
+        35
+      ],
+      "numbers_sorted": [
+        5,
+        15,
+        30,
+        34,
+        35
+      ],
+      "extra_numbers": [
+        27,
+        31,
+        37,
+        48,
+        54
+      ],
+      "extra_numbers_sorted": [
+        27,
+        31,
+        37,
+        48,
+        54
+      ],
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
+    },
+    {
+      "draw_id": "2026-05-08-evening",
+      "date": "2026-05-08",
+      "slot": "evening",
+      "time": "20:30",
+      "numbers": [
+        4,
+        22,
+        36,
+        41,
+        45
+      ],
+      "numbers_sorted": [
+        4,
+        22,
+        36,
+        41,
+        45
+      ],
+      "extra_numbers": [
+        9,
+        15,
+        21,
+        33,
+        42
+      ],
+      "extra_numbers_sorted": [
+        9,
+        15,
+        21,
+        33,
+        42
+      ],
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
+    },
+    {
+      "draw_id": "2026-05-09-midday",
+      "date": "2026-05-09",
+      "slot": "midday",
+      "time": "13:00",
+      "numbers": [
+        2,
+        4,
+        14,
+        31,
+        43
+      ],
+      "numbers_sorted": [
+        2,
+        4,
+        14,
+        31,
+        43
+      ],
+      "extra_numbers": [
+        22,
+        27,
+        46,
+        47,
+        52
+      ],
+      "extra_numbers_sorted": [
+        22,
+        27,
+        46,
+        47,
+        52
+      ],
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
+    },
+    {
+      "draw_id": "2026-05-09-evening",
+      "date": "2026-05-09",
+      "slot": "evening",
+      "time": "20:30",
+      "numbers": [
+        4,
+        8,
+        34,
+        49,
+        51
+      ],
+      "numbers_sorted": [
+        4,
+        8,
+        34,
+        49,
+        51
+      ],
+      "extra_numbers": [
+        9,
+        36,
+        45,
+        46,
+        50
+      ],
+      "extra_numbers_sorted": [
+        9,
+        36,
+        45,
+        46,
+        50
+      ],
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
+    },
+    {
+      "draw_id": "2026-05-10-midday",
+      "date": "2026-05-10",
+      "slot": "midday",
+      "time": "13:00",
+      "numbers": [
+        23,
+        29,
+        44,
+        49,
+        53
+      ],
+      "numbers_sorted": [
+        23,
+        29,
+        44,
+        49,
+        53
+      ],
+      "extra_numbers": [
+        3,
+        7,
+        8,
+        11,
+        37
+      ],
+      "extra_numbers_sorted": [
+        3,
+        7,
+        8,
+        11,
+        37
+      ],
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
+    },
+    {
+      "draw_id": "2026-05-10-evening",
+      "date": "2026-05-10",
+      "slot": "evening",
+      "time": "20:30",
+      "numbers": [
+        2,
+        7,
+        32,
+        43,
+        50
+      ],
+      "numbers_sorted": [
+        2,
+        7,
+        32,
+        43,
+        50
+      ],
+      "extra_numbers": [
+        13,
+        14,
+        24,
+        36,
+        49
+      ],
+      "extra_numbers_sorted": [
+        13,
+        14,
+        24,
+        36,
+        49
+      ],
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
+    },
+    {
+      "draw_id": "2026-05-11-midday",
+      "date": "2026-05-11",
+      "slot": "midday",
+      "time": "13:00",
+      "numbers": [
+        4,
+        9,
+        21,
+        51,
+        54
+      ],
+      "numbers_sorted": [
+        4,
+        9,
+        21,
+        51,
+        54
+      ],
+      "extra_numbers": [
+        8,
+        12,
+        19,
+        26,
+        49
+      ],
+      "extra_numbers_sorted": [
+        8,
+        12,
+        19,
+        26,
+        49
+      ],
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
+    },
+    {
+      "draw_id": "2026-05-11-evening",
+      "date": "2026-05-11",
+      "slot": "evening",
+      "time": "20:30",
+      "numbers": [
+        23,
+        32,
+        35,
+        42,
+        55
+      ],
+      "numbers_sorted": [
+        23,
+        32,
+        35,
+        42,
+        55
+      ],
+      "extra_numbers": [
+        21,
+        24,
+        30,
+        37,
+        44
+      ],
+      "extra_numbers_sorted": [
+        21,
+        24,
+        30,
+        37,
+        44
+      ],
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
+    },
+    {
+      "draw_id": "2026-05-12-midday",
+      "date": "2026-05-12",
+      "slot": "midday",
+      "time": "13:00",
+      "numbers": [
+        9,
+        14,
+        22,
+        35,
+        41
+      ],
+      "numbers_sorted": [
+        9,
+        14,
+        22,
+        35,
+        41
+      ],
+      "extra_numbers": [
+        16,
+        18,
+        38,
+        39,
+        42
+      ],
+      "extra_numbers_sorted": [
+        16,
+        18,
+        38,
+        39,
+        42
+      ],
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
+    },
+    {
+      "draw_id": "2026-05-12-evening",
+      "date": "2026-05-12",
+      "slot": "evening",
+      "time": "20:30",
+      "numbers": [
+        10,
+        11,
+        24,
+        33,
+        34
+      ],
+      "numbers_sorted": [
+        10,
+        11,
+        24,
+        33,
+        34
+      ],
+      "extra_numbers": [
+        13,
+        20,
+        35,
+        46,
+        54
+      ],
+      "extra_numbers_sorted": [
+        13,
+        20,
+        35,
+        46,
+        54
+      ],
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
     }
   ]
 }

@@ -3,7 +3,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-from common import dump_json, ensure_layout, refresh_index_and_latest
+from common import ROOT_SOURCE_NAME, ROOT_SOURCE_URL, dump_json, ensure_layout, refresh_index_and_latest
 
 
 def test_enrich_winners_exact_and_date_fallback(tmp_path: Path) -> None:
@@ -18,8 +18,8 @@ def test_enrich_winners_exact_and_date_fallback(tmp_path: Path) -> None:
             "numbers_sorted": [4, 18, 20, 25, 31],
             "extra_numbers": [],
             "extra_numbers_sorted": [],
-            "source": "millionday.cloud",
-            "source_url": "https://www.millionday.cloud/archivio-estrazioni.php",
+            "source": ROOT_SOURCE_NAME,
+            "source_url": ROOT_SOURCE_URL,
         },
         {
             "draw_id": "2021-09-01-evening",
@@ -30,8 +30,8 @@ def test_enrich_winners_exact_and_date_fallback(tmp_path: Path) -> None:
             "numbers_sorted": [2, 8, 13, 14, 19],
             "extra_numbers": [],
             "extra_numbers_sorted": [],
-            "source": "millionday.cloud",
-            "source_url": "https://www.millionday.cloud/archivio-estrazioni.php",
+            "source": ROOT_SOURCE_NAME,
+            "source_url": ROOT_SOURCE_URL,
         },
     ]
     refresh_index_and_latest(root, draws)
