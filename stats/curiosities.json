@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-14T14:26:44Z",
-  "draw_count": 4223,
+  "updated_at": "2026-06-14T20:09:23Z",
+  "draw_count": 4224,
   "from_date": "2018-02-07",
   "to_date": "2026-06-14",
   "hot_numbers": [
@@ -75,16 +75,16 @@
       364
     ],
     [
-      11,
-      368
-    ],
-    [
       38,
       368
     ],
     [
       49,
       368
+    ],
+    [
+      11,
+      369
     ]
   ],
   "hot_pairs": [
@@ -243,8 +243,8 @@
       290
     ]
   ],
-  "avg_overlap": 0.4593,
-  "repeated_draws": 1681,
+  "avg_overlap": 0.4594,
+  "repeated_draws": 1682,
   "extra_hot_numbers": [
     [
       32,
@@ -283,7 +283,7 @@
       263
     ],
     [
-      37,
+      12,
       260
     ]
   ]
