@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-17T16:00:59Z",
+  "updated_at": "2026-06-17T20:55:13Z",
   "years": [
     2018,
     2019,
@@ -13,8 +13,8 @@
   ],
   "latest_year": 2026,
   "archive_start_date": "2018-02-07",
-  "total_draws": 4229,
-  "latest_draw_id": "2026-06-17-midday",
+  "total_draws": 4230,
+  "latest_draw_id": "2026-06-17-evening",
   "source": "lotto-italia.it",
   "source_url": "https://www.lotto-italia.it/millionday/estratti",
   "is_demo": false
