@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-21T20:54:30Z",
-  "draw_count": 4238,
+  "updated_at": "2026-06-22T15:59:26Z",
+  "draw_count": 4239,
   "from_date": "2018-02-07",
-  "to_date": "2026-06-21",
+  "to_date": "2026-06-22",
   "hot_numbers": [
     [
       16,
@@ -243,8 +243,8 @@
       292
     ]
   ],
-  "avg_overlap": 0.4595,
-  "repeated_draws": 1686,
+  "avg_overlap": 0.4597,
+  "repeated_draws": 1687,
   "extra_hot_numbers": [
     [
       32,
