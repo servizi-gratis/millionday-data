@@ -1,40 +1,40 @@
 {
-  "updated_at": "2026-08-29T16:41:52Z",
+  "updated_at": "2026-08-29T21:12:39Z",
   "source_name": "lotto-italia.it",
   "source_url": "https://www.lotto-italia.it/millionday/estratti",
   "is_demo": false,
   "draw": {
-    "draw_id": "2026-08-29-midday",
+    "draw_id": "2026-08-29-evening",
     "date": "2026-08-29",
-    "slot": "midday",
-    "time": "13:00",
+    "slot": "evening",
+    "time": "20:30",
     "numbers": [
-      14,
-      20,
-      27,
-      28,
-      42
+      5,
+      7,
+      15,
+      31,
+      38
     ],
     "numbers_sorted": [
-      14,
-      20,
-      27,
-      28,
-      42
+      5,
+      7,
+      15,
+      31,
+      38
     ],
     "extra_numbers": [
-      25,
-      30,
-      35,
-      46,
-      49
+      1,
+      14,
+      27,
+      34,
+      43
     ],
     "extra_numbers_sorted": [
-      25,
-      30,
-      35,
-      46,
-      49
+      1,
+      14,
+      27,
+      34,
+      43
     ],
     "source": "lotto-italia.it",
     "source_url": "https://www.lotto-italia.it/millionday/estratti"
