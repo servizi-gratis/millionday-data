@@ -2,7 +2,7 @@
   "year": 2026,
   "source": "lotto-italia.it",
   "source_url": "https://www.lotto-italia.it/millionday/estratti",
-  "draw_count": 516,
+  "draw_count": 517,
   "draws": [
     {
       "draw_id": "2026-01-01-midday",
@@ -18576,6 +18576,42 @@
         11,
         37,
         41
+      ],
+      "source": "lotto-italia.it",
+      "source_url": "https://www.lotto-italia.it/millionday/estratti"
+    },
+    {
+      "draw_id": "2026-09-16-midday",
+      "date": "2026-09-16",
+      "slot": "midday",
+      "time": "13:00",
+      "numbers": [
+        2,
+        11,
+        30,
+        31,
+        37
+      ],
+      "numbers_sorted": [
+        2,
+        11,
+        30,
+        31,
+        37
+      ],
+      "extra_numbers": [
+        12,
+        39,
+        41,
+        50,
+        54
+      ],
+      "extra_numbers_sorted": [
+        12,
+        39,
+        41,
+        50,
+        54
       ],
       "source": "lotto-italia.it",
       "source_url": "https://www.lotto-italia.it/millionday/estratti"
